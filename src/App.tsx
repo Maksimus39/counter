@@ -3,6 +3,7 @@ import {useState} from "react";
 import {Counter} from "./components/counter/Counter.tsx";
 
 export const App = () => {
+    const stopNumber:number = 5
     const [counter, setCounter] = useState<number>(0)
 
     function increment() {
@@ -19,6 +20,7 @@ export const App = () => {
             <Counter increment={increment}
                      reset={reset}
                      counter={counter}
+                     stopNumber={stopNumber}
             />
         </>
     )
